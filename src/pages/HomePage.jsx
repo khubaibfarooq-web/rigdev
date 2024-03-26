@@ -1,15 +1,18 @@
-import Hero from "../components/Hero";
-import Homecards from "../components/Homecards";
-import JobListings from "../components/JobsListings";
-import ViewAllJobs from "../components/ViewAllJobs";
+import Hero from "../sections/Hero";
+import Kubernetes from "../sections/kubernetes";
+import Developer from "../sections/developer";
+import Platform from "../sections/platform";
+import Spin from "../sections/spin";
+
 
 const HomePage = () => {
     return (
         <>
             <Hero />
-            <Homecards />
-            <JobListings isHome={true} />
-            <ViewAllJobs />
+            <Kubernetes />
+            <Developer />
+            <Platform />
+            <Spin />
         </>
     )
 }

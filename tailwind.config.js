@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primaryText: '#606060',
+        secondaryText: '#131313',
+        lightGreyText: '##E8E8E8',
+      },
+      borderRadius: {
+        primaryBorder: '16px',
+        secondaryBorder: '8px',
+      },
       fontFamily: {
         sans: ['Roboto', 'sans-serif']
       },
