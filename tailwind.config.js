@@ -6,17 +6,30 @@ export default {
   ],
   theme: {
     extend: {
+      minHeight: {
+        'xl': '415px',
+        'lg': '400px',
+        'md': '400px',
+      },
       colors: {
         primaryText: '#606060',
         secondaryText: '#131313',
-        lightGreyText: '##E8E8E8',
+        lightGreyText: '#E8E8E8',
+        veryLightGrey: '#D8D8D8',
+        slateGrey: '#A1A1A1',
+        dullGrey: '#F5F5F5',
+        mediumGrey: '#DEDEDE',
+        darkGrey: '#484848',
+        dullBlack: '#1F1F1F',
+        lightBlack: '#262626',
       },
       borderRadius: {
         primaryBorder: '16px',
+        mediumBorder: '24px',
         secondaryBorder: '8px',
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif']
+        inter: ['Inter', 'sans-serif'],
       },
       gridTemplateColumns: {
         '70/30': '70% 28%',
