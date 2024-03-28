@@ -9,7 +9,7 @@ export default {
       minHeight: {
         'xl': '415px',
         'lg': '400px',
-        'md': '400px',
+        'md': '260px',
       },
       colors: {
         primaryText: '#606060',
@@ -20,6 +20,8 @@ export default {
         dullGrey: '#F5F5F5',
         mediumGrey: '#DEDEDE',
         darkGrey: '#484848',
+        mercuryGrey: "#E7E7E7",
+        darkMercuryGrey: "#8D8D8D",
         dullBlack: '#1F1F1F',
         lightBlack: '#262626',
       },

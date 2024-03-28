@@ -11,13 +11,13 @@ const kubernetes = () => {
                     <h2 className="max-w-xl mx-auto leading-6 text-4xl font-normal text-center mb-[50px] md:text-5xl ">Don’t let the complexity of Kubernetes leak into your engineering team</h2>
                 </div>
                 <div className="flex flex-wrap">
-                    <div className="w-full lg:w-1/3 md:w-1/2 p-4">
+                    <div className="w-full lg:w-1/3 md:w-1/2 px-[10px]">
                         <Card />
                     </div>
-                    <div className="w-full lg:w-1/3 md:w-1/2 p-4">
+                    <div className="w-full lg:w-1/3 md:w-1/2 px-[10px]">
                         <Card />
                     </div>
-                    <div className="w-full lg:w-1/3 md:w-1/2 p-4">
+                    <div className="w-full lg:w-1/3 md:w-1/2 px-[10px]">
                         <Card />
                     </div>
                 </div>
