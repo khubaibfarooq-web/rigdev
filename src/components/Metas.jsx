@@ -11,7 +11,7 @@ const Metas = (props) => {
                     <img src={img} className="mr-[10px]" />
                     {pillTitle}
                 </div>
-                <h3 className="text-white text-4xl font-normal mb-[30px] md:text-5xl">{title}</h3>
+                <h3 className="text-white text-2xl font-normal mb-[20px] md:text-5xl">{title}</h3>
                 <p className="text-md text-veryLightGrey w-full mb-[25px] md:max-w-3xl">{description}</p>
                 <NavLink className="text-sm text-secondaryText text-md font-medium py-[8px] px-[20px] px-3 bg-white rounded-secondaryBorder inline-flex items-center justify-center mb-[15px]">
                     Explore Doumentation

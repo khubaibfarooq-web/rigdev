@@ -12,7 +12,7 @@ const TabPane = ({ children }) => {
     return (
         <>
             <div className="flex justify-center">
-                <div className="max-[480px]:max-w-[180px] inline-flex flex-wrap justify-center bg-mercuryGrey rounded-[8px]  mb-8 min-[480px]:mb-12">
+                <div className="max-[480px]:max-w-[180px] inline-flex flex-wrap justify-center bg-mercuryGrey rounded-[8px]  mb-8 min-[480px]:mb-[40px]">
                     {tabs.map((tab, index) => (
                         <button
                             key={index}

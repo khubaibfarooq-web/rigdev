@@ -11,19 +11,18 @@ const Hero = () => {
     return (
         <section id="hero" className="bg-white pt-[80px] pb-[60px] md:pt-[160px] md:pb-[120px]">
             <div className="container px-3 mx-auto md:px-6">
-                <div className="flex flex-wrap items-center flex-col-reverse md:flex-row">
-                    <div className="md:w-1/2">
-                        <div className="mb-10 md:mb-[124px]">
-                            <h1 className="max-w-xl leading-6 text-4xl font-normal text-center mb-8 md:text-5xl md:text-left">
+                <div className="flex flex-wrap items-center">
+                    <div className="px-[10px] order-2 md:order-2 xl:order-1 md:w-full xl:w-1/2">
+                        <div className="mb-[40px] md:mb-[124px]">
+                            <h1 className="max-w-xl text-2xl font-normal text-center mb-[12px] md:mb-[24px] md:text-5xl md:text-left">
                                 The application platform for Kubernetes
                             </h1>
-                            <p className="mb-7 max-w-md">Deploy, manage and troubleshoot cloud-native applications at scale without overwhelming your engineers with the complexity of Kubernetes.</p>
+                            <p className="max-w-md mb-[30px] md:mb-[28px]">Deploy, manage and troubleshoot cloud-native applications at scale without overwhelming your engineers with the complexity of Kubernetes.</p>
                             <div className="md:flex items-center">
                                 <NavLink className="inline-flex items-center justify-between bg-secondaryText pt-2 pb-2 px-5 rounded-secondaryBorder mb-3 mr-2 md:mb-0 md:mr-3 ">
                                     <span className="text-white font-medium">Documentation</span>
                                     <img className="ml-3 h-auto w-auto" src={arrowRight} />
                                 </NavLink>
-
                                 <NavLink className="inline-flex items-center justify-between bg-white pt-2 pb-2 px-4 rounded-secondaryBorder border border-lightGreyText">
                                     <img className="mr-3 h-auto w-auto" src={gitBlack} />
                                     <span className="font-medium">Get Started</span>
@@ -39,8 +38,10 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mb-[40px] md:mb-0 md:w-1/2">
+                    <div className="px-[10px] order-1 mb-[40px] md:order-1 xl:order-2 xl:mb-[40px] md:w-full xl:w-1/2 ">
+                        <div className="flex justify-center">
                         <img src={stack} />
+                        </div>
                     </div>
                 </div>
             </div>

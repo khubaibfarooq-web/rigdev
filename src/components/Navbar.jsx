@@ -50,7 +50,7 @@ const Navbar = ({ toggleSidebar }) => {
                             />
                         </NavLink>
                     </div>
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <div className="md:flex space-x-2">
                             <NavLink
                                 to="/"
@@ -74,7 +74,7 @@ const Navbar = ({ toggleSidebar }) => {
                             </NavLink>
                         </div>
                     </div>
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <NavLink
                             to="/add-job"
                             className="flex items-center bg-black text-white inline-block rounded-secondaryBorder px-3 py-2" >
@@ -82,7 +82,7 @@ const Navbar = ({ toggleSidebar }) => {
                             support us
                         </NavLink>
                     </div>
-                    <div className="menu-toggler block md:hidden">
+                    <div className="menu-toggler block lg:hidden">
                         <button
                             id="menu-btn"
                             className={`hamburger focus:outline-none ${isOpen ? 'open' : ''}`}
