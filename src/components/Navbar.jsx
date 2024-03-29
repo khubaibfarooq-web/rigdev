@@ -6,7 +6,6 @@ import git from "../assets/images/git.svg"
 
 const Navbar = ({ toggleSidebar }) => {
 
-
     const [scrolling, setScrolling] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -34,7 +33,7 @@ const Navbar = ({ toggleSidebar }) => {
 
     const LinkClass = ({ isActive }) =>
         isActive ?
-            'bg-black text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
+            'bg-black text-white hover:bg-gray-900 border border-darkGrey hover:text-white rounded-md px-3 py-2'
             : 'text-primaryText hover:bg-gray-900 hover:text-white rounded-md px-3 py-2';
 
     return (

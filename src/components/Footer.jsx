@@ -29,7 +29,7 @@ const Footer = () => {
                         <img src={community} />
                     </div>
                 </div>
-                <div className="border-b border-darkGrey pt-[124px] pb-[40px]">
+                <div className="border-b border-darkGrey pt-[60px] pb-[40px] md:pt-[124px]">
                     <div className="flex flex-wrap items-start">
                         <div className="w-full mb-[20px] xl:w-1/2 xl:mb-0">
                             <div className="mb-[24px]">
@@ -59,7 +59,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="copy-rights pt-[40px] pb-[40px]">
-                    <ul className="text-primaryText flex-wrap gap-4 md:flex">
+                    <ul className="text-primaryText flex flex-wrap gap-4 justify-center xl:justify-start">
                         <li>
                             <span>© 2023 Rig.Dev ApS</span>
                         </li>
