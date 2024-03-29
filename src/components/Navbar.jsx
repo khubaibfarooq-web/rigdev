@@ -4,10 +4,16 @@ import logo from "../assets/images/web-logo.svg"
 import git from "../assets/images/git.svg"
 
 
-const Navbar = () => {
+const Navbar = ({ toggleSidebar }) => {
 
 
     const [scrolling, setScrolling] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleMenuClick = () => {
+        setIsOpen(!isOpen);
+        toggleSidebar();
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,17 +31,15 @@ const Navbar = () => {
         };
     }, []);
 
+
     const LinkClass = ({ isActive }) =>
         isActive ?
             'bg-black text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
             : 'text-primaryText hover:bg-gray-900 hover:text-white rounded-md px-3 py-2';
 
-
-
-
     return (
         <>
-            <nav className={`z-10 transition-width duration-500 ease-in-out fixed left-0 right-0 mx-auto px-2 py-2 sm:px-6 lg:px-3 border border-solid border-lightGreyText rounded-primaryBorder ${scrolling ? 'top-0 w-full bg-white shadow-lg' : 'top-3 w-3/4 shadow-sm'}`}>
+            <nav className={`z-10 transition-width duration-500 ease-in-out fixed top-0 left-0 right-0 mx-auto py-2 sm:px-6 lg:px-3 border border-solid border-lightGreyText rounded-primaryBorder ${scrolling ? 'w-full bg-white shadow-lg px-[15px]' : 'w-3/4 px-[10px] shadow-sm'}`}>
                 <div className="flex items-center justify-between">
                     <div>
                         <NavLink className="flex flex-shrink-0 items-center" to="/">
@@ -54,29 +58,19 @@ const Navbar = () => {
                             >Home
                             </NavLink>
                             <NavLink
-                                to="/jobs"
+                                to="/pricing"
                                 className={LinkClass}
-                            >Jobs
+                            >Pricing
                             </NavLink>
                             <NavLink
-                                to="/add-job"
+                                to="/about"
                                 className={LinkClass}
-                            >Add Job
+                            >About
                             </NavLink>
                             <NavLink
-                                to="/"
+                                to="/community"
                                 className={LinkClass}
-                            >Home
-                            </NavLink>
-                            <NavLink
-                                to="/jobs"
-                                className={LinkClass}
-                            >Jobs
-                            </NavLink>
-                            <NavLink
-                                to="/add-job"
-                                className={LinkClass}
-                            >Add Job
+                            >community
                             </NavLink>
                         </div>
                     </div>
@@ -87,6 +81,17 @@ const Navbar = () => {
                             <img className="mr-2" src={git} />
                             support us
                         </NavLink>
+                    </div>
+                    <div className="menu-toggler block md:hidden">
+                        <button
+                            id="menu-btn"
+                            className={`hamburger focus:outline-none ${isOpen ? 'open' : ''}`}
+                            onClick={handleMenuClick}
+                        >
+                            <span className="hamburger-top"></span>
+                            <span className="hamburger-middle"></span>
+                            <span className="hamburger-bottom"></span>
+                        </button>
                     </div>
                 </div>
             </nav>
