@@ -12,6 +12,7 @@ export default {
         'md': '260px',
       },
       colors: {
+        primary: '#b1c6d5',
         primaryText: '#606060',
         secondaryText: '#131313',
         lightGreyText: '#E8E8E8',
