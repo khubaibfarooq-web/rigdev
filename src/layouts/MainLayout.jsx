@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Outlet } from "react-router-dom";
-import Weather from "../components/Weather";
+// import Weather from "../components/Weather";
 
 const MainLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,12 +16,12 @@ const MainLayout = () => {
 
   return (
     <>
-      {/* <Navbar toggleSidebar={toggleSidebar} /> */}
-      {/* <SideBar isOpen={isOpen} /> */}
-      {/* <Outlet /> */}
-      {/* <ToastContainer /> */}
-      {/* <Footer /> */}
-      <Weather />
+      <Navbar toggleSidebar={toggleSidebar} />
+      <SideBar isOpen={isOpen} />
+      <Outlet />
+      <ToastContainer />
+      <Footer />
+      {/* <Weather /> */}
     </>
   );
 };
